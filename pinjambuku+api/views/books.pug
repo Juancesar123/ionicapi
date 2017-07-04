@@ -1,0 +1,24 @@
+extends layout
+
+
+block content
+    .form-group
+    label Nama Buku
+    input.form-control(type='text', ng-model='namabuku')
+    .form-group
+    label Penerbit
+    input.form-control(type='text', ng-model='penerbit')
+    .form-group
+    label Nama Penulis
+    input.form-control(type='text', ng-model='penulis')
+    .form-group
+    label Tahun Terbit
+    input.form-control(type='text', ng-model='tahunterbit')
+    .form-group
+    label Stok
+    input.form-control(type='text', ng-model='stok')
+    br
+    label deskripsi singkat
+    textarea.form-control(ng-model='deskripsisingkat')
+    br
+    button.btn.btn-primary(ng-click='simpan()') Simpan

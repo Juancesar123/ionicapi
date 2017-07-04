@@ -1,0 +1,17 @@
+extends layout
+
+
+block content
+  table.table.bordered-stripped
+    thead
+        th Nama
+        th Email
+        th Nomor Telpon
+        th jumlah
+    tbody
+        tr(ng-repeat='item in datapinjam')
+            td {{item.nama}}
+            td {{item.email}}
+            td {{item.notelp}}
+            td {{item.jumlah}}
+
